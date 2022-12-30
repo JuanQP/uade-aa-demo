@@ -1,10 +1,9 @@
-const { networkInterfaces } = require('os');
-const path = require('path');
-const express = require("express");
-require('dotenv').config();
+import "dotenv/config";
+import express from "express";
+import { networkInterfaces } from 'os';
+import path from 'path';
 
 const PORT = process.env.PORT || 3001;
-
 const app = express();
 
 // Have Node serve the files for our built React app
